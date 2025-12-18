@@ -31,8 +31,9 @@
 
 ```mermaid
 erDiagram
-    USER ||--o{ COURSE : creates
-    COURSE ||--|{ LESSONS : contains
-    USER ||--o{ TeacherProfiles : tracks
-    TeacherProfiles ||--o{ reviews : records
-    USER ||--o{ promo : submits
+    USER ||--o{ COURSE : 
+    COURSE ||--|{ LESSONS :
+    COURSE ||--|{ CoursePurchases : 
+    USER ||--o{ TeacherProfiles : 
+    TeacherProfiles ||--o{ reviews : 
+    USER ||--o{ promo :
