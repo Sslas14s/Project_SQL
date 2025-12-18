@@ -31,8 +31,15 @@
 
 ```mermaid
 erDiagram
-    USER ||--o{ COURSE :
-    COURSE ||--o{ CoursePurchase : 
-    USER ||--o{ TeacherProfiles : 
-    TeacherProfiles ||--o{ reviews : 
-    USER ||--o{ promo :
+    USERS ||--o| TEACHERPROFILES : "имеет профиль (1:1)"
+    USERS ||--o{ REVIEWS : "пишет"
+    USERS ||--o{ PROMO : "использует/владеет"
+    USERS ||--o{ COURSEPURCHASES : "покупает"
+    
+    TEACHERPROFILES ||--o{ REVIEWS : "получает"
+    TEACHERPROFILES ||--o{ COURSES : "преподает"
+    
+    COURSES ||--o{ COURSEPURCHASES : "продается"
+    COURSES ||--o{ LESSONS : "содержит"
+    
+    PROMO ||--o{ COURSEPURCHASES : "применяется в"
