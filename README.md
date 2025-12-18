@@ -32,10 +32,7 @@
 ```mermaid
 erDiagram
     USER ||--o{ COURSE : creates
-    COURSE ||--|{ MODULE : contains
-    MODULE ||--|{ LESSON : contains
-    LESSON ||--|{ STEP : contains
-    USER ||--o{ PROGRESS : tracks
-    STEP ||--o{ PROGRESS : records
-    USER ||--o{ SUBMISSION : submits
-    STEP ||--o{ SUBMISSION : evaluates
+    COURSE ||--|{ LESSONS : contains
+    USER ||--o{ TeacherProfiles : tracks
+    TeacherProfiles ||--o{ reviews : records
+    USER ||--o{ promo : submits
