@@ -4,9 +4,8 @@
 
 **Реализация архитектуры реляционной базы данных для образовательной платформы на PostgreSQL.**
 
-[![PostgreSQL](img.shields.io)](www.postgresql.org)
-[![Database](img.shields.io)]()
-[![Status](img.shields.io)]()
+[![PostgreSQL]([www.postgresql.org](https://ru.wikipedia.org/wiki/PostgreSQL))
+[![ER.DIAGRAM]([https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/2048px-Diagrams.net_Logo.svg.png)
 
 </div>
 
