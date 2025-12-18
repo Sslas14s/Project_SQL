@@ -33,7 +33,7 @@
 erDiagram
     USER ||--o{ COURSE : 
     COURSE ||--|{ LESSONS :
-    COURSE ||--|{ CoursePurchases : 
+    CoursePurchases ||--|{ COURSE : 
     USER ||--o{ TeacherProfiles : 
     TeacherProfiles ||--o{ reviews : 
     USER ||--o{ promo :
