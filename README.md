@@ -32,8 +32,8 @@
 ```mermaid
 erDiagram
     USER ||--o{ COURSE : 
-    COURSE ||--|{ LESSONS :
-    CoursePurchases ||--|{ COURSE : 
+    COURSE ||--o{ LESSONS :
+    CoursePurchases ||--o{ COURSE : 
     USER ||--o{ TeacherProfiles : 
     TeacherProfiles ||--o{ reviews : 
     USER ||--o{ promo :
